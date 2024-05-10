@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width">
+		
+    <title>Assignment 6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link href="/ExampleProjects/Assignment5/css/styles.css" rel="stylesheet" />
+    <script src="/ExampleProjects/Assignment5/js/data.js" type="text/JavaScript"></script>
+    <script src="/ExampleProjects/Assignment5/js/functions.js" type="text/JavaScript"></script>
+</head>
+
+<body>
+<table class="table-fill">
+    <thead>
+        <tr>
+            <th colspan="2">Product</th>
+            <th>#</th>
+            <th>Price</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Correct the src for the script tag -->
+        <!-- This js should run the the for loop that runs the outputCartRow. This will autofill based on the objects created -->
+        <script src="/ExampleProjects/Assignment5/js/assignment6.js" type="text/JavaScript"></script><!-- causes the prompts -->
+        <p id="Cart"></p>
+        <tr class="totals">
+            <td colspan="4">Subtotal</td>
+            <td>  
+                <script>output(sub);</script>
+            </td><!-- Add (Within <script>) the output(subtotal) function instead of this line -->
+        </tr>
+        <tr class="totals">
+            <td colspan="4">Tax</td>
+            <td>
+                <script>output(tax);</script>
+            </td> <!-- Add (Within <script>) the output(tax) function instead of this line -->
+        </tr>
+        <tr class="totals">
+            <td colspan="4">Shipping</td>
+            <td><script>output(shipping);</script></td> <!-- Add (Within <script>) the output(shipping) function instead of this line -->
+        </tr>
+        <tr class="totals">
+            <td colspan="4" class="focus">Grand Total</td>
+            <td class="focus"><script>output(grand);</script></td> <!-- Add (Within <script>) the output(grand) function instead of this line -->
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

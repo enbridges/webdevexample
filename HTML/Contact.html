@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/stylesheet.css"/>
+    <script src="/Java/validation.js" type="text/JavaScript"></script>
+</head>
+<body class="site">
+    <header>
+        <p class="title">Contact Elizabeth Bridges</p>
+        <nav class="topnav">
+            <a href="/HTML/homepage.html">Home</a>
+            <a href="/HTML/Aboutme.html">About</a>
+            <a class="active" href="/HTML/Contact.html">Contact</a>
+            <a href="/HTML/projects.html">Projects</a>
+            <a href="/HTML/skill.html">Skills</a>
+        </nav>
+    </header>
+    <hr>
+    <section class="whole">
+        <div class="ConInfo">
+            <p class="subti">Contact</p>
+            <hr>
+            <p>
+                <strong>Email:</strong><br>
+                enbridges@eagles.usi.edu</p>
+            <p>
+                <strong>Mail:</strong><br>
+                Elizabeth Bridges <br>
+                839 Pruis Lane <br>
+                Evansville, IN 47712
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/elizabeth-bridges-81a19822b/"><strong>LinkedIn Account</strong></a>
+            </p>
+        </div>
+        <div class="textbox">
+            <p class="subti">Send Me a Brief Message</p>
+            <p>For longer message please send an email with contact info to the left</p>
+            <hr>
+            <form onsubmit="return validateForm()" method="post" name="messageForm" action="http://www.randyconnolly.com/tests/process.php"> <!-- Use this link as an action for the POST request -->
+                <fieldset>
+                    <p>
+                        <label>Email<br></label>
+                        <input type="text" name="Email" placeholder="Enter your email">
+                     </p>
+                    <p>
+                        <label>Subject<br></label>
+                        <select name="Subject">
+                            <option value=""disabled selected hidden>Choose an option</option>
+                            <option value="Inquiry">Inquiry</option>
+                            <option value="Commesion">Commesion</option>
+                            <option value="Chat">Chat</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Your Message<br></label>
+                        <input type="text" name="Message" placeholder="Enter your message here"  size="50">
+                    </p>
+                        <input type="submit" text="Add Meeting" class="submit"/>
+                </fieldset>
+           </form>
+        </div>
+</body>
+</html>

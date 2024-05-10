@@ -1,0 +1,40 @@
+.columns{
+    column-count: 3;
+    break-inside: auto;
+}
+.icon{
+    border-radius: 50%;
+    width: 50%;
+}
+.break{
+    -webkit-column-break-before: always;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color:#ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .ti{
+    font-weight: bold;
+    font-size:large;
+  }
+  .subti{
+    font-weight: bold;
+    font-size: medium;
+  }
+  .sign{
+    font-size: x-small;
+  }
